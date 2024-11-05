@@ -1,2 +1,1 @@
-# About-5quirre1
-A website about me :3
+this is websit to be used after domain expires
