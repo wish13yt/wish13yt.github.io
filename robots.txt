@@ -1,0 +1,40 @@
+# chat gpt
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+# gemini
+User-agent: Google-Extended
+Disallow: /
+# CCBot (commonly sells data to AI companies)
+User-agent: CCBot
+Disallow: /
+# Meta AIs
+User-agent: PerplexityBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+‍User-agent: Claude-Web
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+# Sells data to AI companies
+User-agent: OmgiliBot
+Disallow: /
+# Behavior unsure, however, blocked due to being related to AI
+User-agent: cohere-ai
+Disallow: /
+# Apple AI
+User-agent: Applebot-Extended
+Disallow: /
+# Sells data to AI companies
+User-agent: Bytespider
+Disallow: /
+# Sells data to AI companies
+User-agent: Diffbot
+Disallow: /
+# Associated with an AI image generation company
+User-agent: ImagesiftBot
+Disallow: /

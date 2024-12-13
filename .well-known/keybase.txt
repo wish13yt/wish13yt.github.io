@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/wishyt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://wishdog.link
+  * I am wishyt (https://keybase.io/wishyt) on keybase.
+  * I have a public key with fingerprint 1859 32FE 790E 4A31 6C4C  E5BB 84E5 4E71 8075 8D6E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101b1060774c4efabec91e3d915033b6a9f6db6780eb41f45ccaa04d9c1669ac0a80a",
+      "fingerprint": "185932fe790e4a316c4ce5bb84e54e7180758d6e",
+      "host": "keybase.io",
+      "key_id": "84e54e7180758d6e",
+      "kid": "0101b1060774c4efabec91e3d915033b6a9f6db6780eb41f45ccaa04d9c1669ac0a80a",
+      "uid": "9d38ecc24d99b1f344a81a920fb1f519",
+      "username": "wishyt"
+    },
+    "service": {
+      "hostname": "wishdog.link",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1728223515,
+  "expire_in": 157680000,
+  "prev": "7be17557d92a57a0b53b6245233a6631b77742e1a29777eaf98eec0152134abc",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMInAnicrVJrSBRRFF4fWRlWKPWjLcipEGnb5s7MnceSlD0gKMOIsNRc7r1zd53W
+ZtbZcXVTe9LLXkZGmpIWoWxEP7IgiiDLiIoiekBQgRJBFhGFUVBUd5aCfvSz++fe
+c873ffc7hzOYk+HJTmvzqWuc8tIPafcGjtV5wukd3kYOW3qCCzRyEZq6aI1OY04w
+YuhcgOMBDzDgZV5RJCLREMKUaICKugYgL4pYRlpI1rGsqDzFEghJkBCEeEnXCJBl
+DREeqTzifFzIMMPUjtqG6TBZoEJNFEJU0XgqIRHIRCIUYqxKFEpUASqvQFWXKSNW
+WzGXwcxhFKN+w2I5FgRT9v6B/8++61Jymi6qlBCB1TUMQqIkIRUgTeBDLIJAc4Ex
+aptoE2XoeiNWnXC4Zh/HcnGDUHesbh9/1XUr7K8xzAhjRm3LsYhVwyrVjhONBVym
+k4imoBQHf4sEsWHqbIqMEad2zLBMLgAYkjiGqwoUQRUEEQLo42hD1LBp0HARUJFV
+nh33HxpnkgqmQIFQ0TUBQQXxGLJxCBIURBHJsgiwwmYmUIAEjb0oCmkqpYQHUACi
+hDDh3LZqTYsLqMwmCjPJmBE2kVNnU675xvXKTE9atidrTLq7XZ7s8ZP/7FzOk7E/
+6/e8CraciZdUZXS9K/hyrvOjfeBzcWHvkv0Z42fWNnwb/flDurN4R+Or5EJz6GX5
+ycxxPwZh0cXItOJLS+ddOez1zWqdYSez4tv3HewWF0yU10+/dTwwevarNeIn5bOT
+a/PnJz72V3zrbh9KrHoeX9eiFY7QvKfeQ2WtS5ZNetOyNVrRcbMhd6/3wenKJ5vP
+X07axnBZGXg2paCvbWDlw8zdxpyrA/nn37fuuGYf0Fc/7uvsXn6qP0nLXj/P8XMl
+PtAzd8tdL97mqbWLyO2HS++dqu89s6j9xYZdpbmd+7uaPt3c2DN49H7TES17xeKN
+VbOnZq0Yjky4cOLWvu9v9Ucwb2fyF8LIOvA=
+=NRWs
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wishyt
+
+==================================================================
