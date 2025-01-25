@@ -1,50 +1,587 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <style>
-* {
-  font-family: "Noto Sans", sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Wish">
+    <meta property="og:title" content="Wish">
+    <meta property="og:description" content="Wish's peak website">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="auto">
+    <meta property="og:url" content="https://wish.freakybob.site">
+    <meta name="theme-color" content="#006b79">
+    <title>Wish :3</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(125, 6, 24, 0.5), rgba(2, 21, 3, 0.73)), url(https://search.freakybob.site/images/tree_road.jpg);
+            background-color: #4a050f;
+            color: rgb(245, 124, 222);
+            font-family: 'Lucida Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+.card {
+    height:95vh;
+    width: 95vm;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-h1, p {
-  color: white;
-  display: center;
+
+.github {
+    background: none;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    margin-left: auto;
+    transition: none;
 }
-body {
-  background-image: url("https://images.unsplash.com/photo-1579546929662-711aa81148cf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D");
-  background-repeat: no-repeat;
+
+
+
+
+
+.swag { 
+    height: 240px;
+    width: 600px;
+    background: none;
+    background: linear-gradient(135deg, rgba(153, 43, 140, 0.3), rgba(11, 116, 107, 0.1)), rgba(65, 148, 56, 0.43);
+    border: 1px solid rgba(244, 36, 227, 0.18);
+    backdrop-filter: blur(27px);
+    box-shadow: 0 8px 32px 0 rgb(228, 105, 121);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    animation: pop-in 0.5s ease, fade-out-shadow 0.9s ease-in-out;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+    position: relative;
 }
-  </style>
+
+.swag .github {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swag:hover {
+    transform: rotate3d(0.5, -0.866, 0, 15deg) rotate(1deg);
+    backdrop-filter: blur(5px);
+    animation: pride-shadow 12s ease-in-out infinite, fade-shadow 0.9s ease-in-out;
+}
+
+@keyframes fade-shadow {
+    from {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: 0 0 20px 5px rgb(255, 0, 0),
+                    0 0 40px 10px rgb(255, 165, 0),
+                    0 0 60px 15px rgb(255, 255, 0),
+                    0 0 80px 20px rgb(0, 255, 0),
+                    0 0 100px 25px rgb(0, 0, 255),
+                    0 0 120px 30px rgb(75, 0, 130),
+                    0 0 140px 35px rgb(238, 130, 238);
+    }
+}
+
+@keyframes fade-out-shadow {
+    from {
+        box-shadow: 0 0 20px 5px rgb(255, 0, 0),
+                    0 0 40px 10px rgb(255, 165, 0),
+                    0 0 60px 15px rgb(255, 255, 0),
+                    0 0 80px 20px rgb(0, 255, 0),
+                    0 0 100px 25px rgb(0, 0, 255),
+                    0 0 120px 30px rgb(75, 0, 130),
+                    0 0 140px 35px rgb(238, 130, 238);
+    }
+    to {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pride-shadow {
+    0% {
+        box-shadow: 0 0 20px 5px rgb(255, 0, 0),
+                    0 0 40px 10px rgb(255, 165, 0),
+                    0 0 60px 15px rgb(255, 255, 0),
+                    0 0 80px 20px rgb(0, 255, 0),
+                    0 0 100px 25px rgb(0, 0, 255),
+                    0 0 120px 30px rgb(75, 0, 130),
+                    0 0 140px 35px rgb(238, 130, 238);
+    }
+    50% {
+        box-shadow: 0 0 20px 5px rgb(238, 130, 238),
+                    0 0 40px 10px rgb(75, 0, 130),
+                    0 0 60px 15px rgb(0, 0, 255),
+                    0 0 80px 20px rgb(0, 255, 0),
+                    0 0 100px 25px rgb(255, 255, 0),
+                    0 0 120px 30px rgb(255, 165, 0),
+                    0 0 140px 35px rgb(255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 20px 5px rgb(255, 0, 0),
+                    0 0 40px 10px rgb(255, 165, 0),
+                    0 0 60px 15px rgb(255, 255, 0),
+                    0 0 80px 20px rgb(0, 255, 0),
+                    0 0 100px 25px rgb(0, 0, 255),
+                    0 0 120px 30px rgb(75, 0, 130),
+                    0 0 140px 35px rgb(238, 130, 238);
+    }
+}
+
+
+
+
+.username {
+    color: rgb(41, 203, 127);
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.pfp {
+    height: 140px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.usr {
+    display: flex;
+    position: relative;
+}
+
+.pfp-hover-thing {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 38%;
+    transform: translateX(-50%);
+    background-color: rgba(230, 57, 146, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.pfp:hover + .pfp-hover-thing {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.pfp:not(:hover) + .pfp-hover-thing {
+    opacity: 0;
+    animation: fadeOut 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.about {
+    background:none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.blog {
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(95, 245, 103);
+    text-decoration: none;
+    position: relative;
+    left: 28%;
+    top: -10px;   
+    transition: color 0.3s ease;
+}
+.blog:hover {
+    color: rgb(34, 122, 151);
+    
+}
+
+
+
+.about2 {
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(95, 245, 103);
+    text-decoration: none;
+    position: relative;
+    left: 42%;
+    top: -10px;
+    transition: color 0.3s ease;
+}
+.about2:hover {
+    color: rgb(34, 122, 151);
+}
+
+#music-by {
+    font-size: 0.9;
+    color: rgb(241, 57, 208);
+    text-align: center;
+    margin-top: -30px;
+    font-style: italic;
+}
+#music-by a {
+    text-decoration: none;
+    color: rgb(7, 246, 234);
+    transition: all 0.3s ease-in-out;
+}
+#music-by a:hover {
+    color:#59e1f3;
+    text-decoration: underline
+}
+
+#openModalBtn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background: linear-gradient(135deg, rgba(153, 43, 140, 0.3), rgba(11, 116, 107, 0.1)), rgba(65, 148, 56, 0.43);
+    border: 1px solid rgba(244, 36, 227, 0.2);
+    backdrop-filter: blur(10px);
+    color: rgb(35, 247, 229);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#openModalBtn:hover {
+    background: linear-gradient(135deg, rgba(44, 146, 38, 0.5), rgba(26, 173, 134, 0.2)), rgba(185, 135, 243, 0.2);
+    color: rgb(235, 216, 235);
+    box-shadow: 0 6px 20px rgba(203, 70, 130, 0.5);
+    transform: translateY(-2px);
+    backdrop-filter: blur(20px);
+}
+
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(55, 3, 28, 0.566);
+            backdrop-filter: blur(79x);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #modalContent {
+            background: linear-gradient(135deg, rgba(64, 145, 39, 0.3), rgba(73, 175, 184, 0.1)), rgba(185, 135, 243, 0.1);
+            border: 1px solid rgba(68, 212, 184, 0.807);
+            backdrop-filter: blur(7px);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            animation: fadeIn 0.5s;
+        }
+
+        #modal input {
+            color: #77f715;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(135deg, rgba(69, 139, 51, 0.562), rgba(199, 31, 31, 0.479)), rgba(196, 190, 26, 0.1);
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        #modal input::placeholder {
+            color:rgb(94, 226, 84)
+        }
+
+        #modal button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, rgba(26, 207, 213, 0.3), rgba(155, 35, 177, 0.1)), rgba(251, 32, 255, 0.558);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #modal button:hover {
+            background: linear-gradient(135deg, rgba(135, 228, 231, 0.3), rgba(210, 5, 246, 0.575)), rgba(31, 208, 28, 0.558);
+            color: rgb(68, 226, 250);
+        }
+        .clock {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(0, 0, 0, 0.318);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(20px);
+}
+
+
+
+
+        @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-image: linear-gradient(rgba(68, 15, 21, 0.871), rgba(2, 21, 3, 0.73)), url(https://search.freakybob.site/images/tree_road.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .pfp-hover-thing {
+        left: 50%;
+        text-align: center;
+       top: 190%;
+    }
+    .pfp {
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+    }
+    .swag {
+        width: 245px;
+        height: 350px;
+    }
+    .github {
+        margin-top: -40px !important;
+        margin-right: 85px;
+    }
+    .blog, .projects, .about2 {
+        position: relative;
+        left: 0;
+        top: 16px;
+        font-size: 1em;
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+    }
+    #music-by {
+        margin-top: -60px;
+        font-size: 0.9em;
+        font-family: Comic system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #openModalBtn {
+    bottom: 590px;
+    left: 34%;
+    }
+#modalContent {
+    width: 260px;
+}
+
+.swag {
+    animation: none;
+    box-shadow: none;
+}
+.swag:hover {
+        transform: none;
+        animation: none;
+        box-shadow: none;
+    }
+    .clock {
+        font-size: 0.85em;
+        top: 10px;
+        right: 63px;
+        padding: 10px 15px;
+    }
+}
+
+    
+
+
+    </style>
 </head>
 <body>
-<h1 id="dynamicText">Hi! If you see this, a JS script failed. Please make an issue :)</h1>
-<script>
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    const textOptions = [
-      "my fire website",
-      "hej",
-      "android > ios"
-    ];
+    <div class="clock" id="clock"></div>
+    <audio autoplay loop src="https://squirrel.freakybob.site/assets/WEBSITE/background-music/main.mp3"></audio>
 
-    function getRandomText() {
-      const randomIndex = Math.floor(Math.random() * textOptions.length);
-      return textOptions[randomIndex];
+<!--I STOLE ALOT OF THIS CODE FROM NOMA SO THANK YOU :33333 !!!! https://swag.freakybob.site/ !!!!-->
+<!--I STOLE ALOT OF THIS CODE FROM SQUIRREL SO THANK YOU :33333 !!!! https://squirrel.freakybob.site/ !!!!-->
+    <header>
+    <div class="card">
+        <div class="swag">
+            <div class="usr" style="position: relative; margin-left:0px; margin-top:-22px; margin-right:5px; padding-top: 20px; background: none;">
+                <img src="https://github.com/Wish13yt.png" alt="pfp" class="pfp hover-pfp">
+                <div class="pfp-hover-thing">greg</div>
+                <h1 class="username">Wish :3</h1>
+                <a href="https://github.com/Wish13yt">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Github_logo_svg.svg/600px-Github_logo_svg.svg.png?20230420150203" class="github" style="margin-left: 35%; margin-top: 20px;">
+                </a>
+            </div>
+            <h1 class="about">web dev & #1 python fan | she/her</h1>
+            <br>
+            <a href="blogs" class="blog">Blog Posts</a>
+        </div>
+    </div>
+</header>
+<button id="openModalBtn">Enter a code?</button>
+
+    <div id="modal">
+        <div id="modalContent">
+            <h1>...</h1>
+            <p>Enter a code, if you dare!</p>
+            <input type="text" id="phraseInput" placeholder="Enter the code or phrase!">
+            <button id="submitBtn">Go</button>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+ </div>
+ <script>
+    
+    const openModalBtn = document.getElementById('openModalBtn');
+const modal = document.getElementById('modal');
+const submitBtn = document.getElementById('submitBtn');
+const phraseInput = document.getElementById('phraseInput');
+const errorMessage = document.getElementById('errorMessage');
+
+openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+        errorMessage.textContent = '';
     }
-    const h1Element = document.getElementById('dynamicText');
-    h1Element.innerHTML = getRandomText();
-  });
+});
+
+phraseInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        submitBtn.click();
+    }
+});
+
+submitBtn.addEventListener('click', () => {
+    const phrase = phraseInput.value.trim();
+    if (!phrase) {
+        errorMessage.textContent = 'Make sure to type something :P';
+        return;
+    }
+
+    const sanitizedPhrase = phrase.replace(/\s+/g, '_').toLowerCase();
+    fetch(`/secrets/${sanitizedPhrase}.html`, { method: 'HEAD' })
+        .then((response) => {
+            if (response.ok) {
+                errorMessage.textContent = 'Page found! Redirecting shortly...';
+                setTimeout(() => {
+                    window.location.href = `/secrets/${sanitizedPhrase}.html`;
+                }, 2000);
+            } else {
+                const suggestion = getClosestMatch(sanitizedPhrase);
+                errorMessage.textContent = suggestion
+                    ? `That was not found... maybe you were wanting to say "${suggestion}"  !! `
+                    : 'That doesn\'t exist, sorry :c';
+            }
+        })
+        .catch(() => {
+            errorMessage.textContent = 'That doesn\'t exist, sorry :c';
+        });
+});
+
+function getClosestMatch(input) {
+    const knownCodes = ['nothing yet'];
+    let closestMatch = null;
+    let minDistance = Infinity;
+
+    for (const code of knownCodes) {
+        const distance = getLevenshteinDistance(input, code);
+        if (distance < minDistance) {
+            minDistance = distance;
+            closestMatch = code;
+        }
+    }
+
+    return minDistance <= 3 ? closestMatch : null;
+}
+
+function getLevenshteinDistance(a, b) {
+    const tmp = [];
+    for (let i = 0; i <= a.length; i++) {
+        tmp[i] = [i];
+    }
+
+    for (let j = 0; j <= b.length; j++) {
+        tmp[0][j] = j;
+    }
+
+    for (let i = 1; i <= a.length; i++) {
+        for (let j = 1; j <= b.length; j++) {
+            tmp[i][j] = Math.min(
+                tmp[i - 1][j] + 1,
+                tmp[i][j - 1] + 1,
+                tmp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
+            );
+        }
+    }
+
+    return tmp[a.length][b.length];
+}
+function updateClock() {
+            const now = new Date();
+            const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+            const time = now.toLocaleTimeString();
+            const date = now.toLocaleDateString(undefined, options);
+            document.getElementById('clock').textContent = `${date} | ${time}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+
 </script>
-<marquee scrollamount="10"><a href="https://pikidiary.lol"><img src="images/piki_btn.png"></a><a href="https://graybox.lol/" target="_blank"><img src="https://graybox.lol/button?speed=60&style=0" alt="GrayBox 88x31 Button" width="88" height="31"></a></marquee>
-<div class="tenor-gif-embed" data-postid="3642346701878996431" data-share-method="host" data-aspect-ratio="1" data-width="10%"><a href="https://tenor.com/view/cat-cat-meme-explosion-explode-exploding-gif-3642346701878996431">Cat Cat Meme Sticker</a>from <a href="https://tenor.com/search/cat-stickers">Cat Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-<div class="tenor-gif-embed" data-postid="25801413" data-share-method="host" data-aspect-ratio="1" data-width="10%"></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-<a href="https://wish13yt.github.io/betterFanta/"><button>betterFanta</button></a>
-<a href="art"><button>ART!!!</button></a>
-<br>
-<!-- <h1>My <a href="https://pikidiary.lol">PIKIDIARY</a> posts!!!!!</h1>
-<iframe src="piki.html"></iframe> -->
-<iframe src="https://dragalia.neocities.org/SHARKCLICKER/shark?site=wishdog.link&text=1&shark=0" width="150px" height="150px"></iframe>
-<a href="https://freakybob.site"><img src="images/freakybutton.png"></a>
-<marquee scrollamount="10"><img src="https://f.feridinha.com/LdHTM.gif"><img src="https://f.feridinha.com/2vYwh.gif"></marquee>
+
+<p id="music-by">Music by <a href="https://pixabay.com/users/music_for_video-22579021/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=10900">music_for_video</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=10900">Pixabay</a><br>Template stolen from Squirrel</p>
+    
 </body>
+</html>
