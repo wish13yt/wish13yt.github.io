@@ -217,6 +217,13 @@ iframe {
             color: rgb(225, 246, 4);
         }
     }
+    #wb_div {
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid pink;
+        padding: 20px;
+    }
 </style>
 
 <body>
@@ -224,24 +231,27 @@ iframe {
     <button id="menu-button" onclick="toggleMenu()">☰</button>
 
     <div class="sidebar" id="sidebar">
-        <h2>Wish's Blog :33</h2>
+        <h2>Navigation</h2>
         <a href="https://wish.freakybob.site/blogs/">Home</a>
         <a href="https://wish.freakybob.site" target="_blank">wish.freakybob.site</a>
-        <hr style="border-radius: 5px; border: 3px solid rgba(210, 17, 245, 0.6); margin: 10px 0; width: 90%;">
-        <h1 class="menu-blog-title" style="font-size: 1.4em; text-align: center; color: rgb(238, 27, 220);">Posts</h1>
-        <iframe src="iframe.html"></iframe>
     </div>
     
 
-        <h1>Blog Posts!</h1>
-        <p class="lastupdated">Last updated: <span>1/8/25</span></p>
+        <h1>Blogs</h1>
         
         <h2>What is this meant for?</h2>
 
         <div class="main-note">
             <h3>Hello! This is my blog, its very awesome so yes</h3>
-            <p>im just stealing this from squirrel 4 now, enjoy the blog posts which will come later!!</p>
-            <p style="text-align: center;">From <a href="https://github.com/Wish13yt">Wish</a> <3</p>
+            <div id="wb_div">
+            <widgetbot
+    server="1335270477714952243"
+    channel="1335275248047620136"
+    width="300"
+    height="300"
+></widgetbot>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
         </div>
         <p id="music-by" style="margin-top: 50px; color: rgb(26, 230, 196);">This page is just a reuse of <a href="https://blog.freakybob.site" style="color: rgb(55, 255, 0);">FreakyBlog</a> :3</p>
         
