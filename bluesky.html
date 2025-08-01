@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>redirecting...</title>
 </head>
-<body>
+<body onload="redirect()">
     <a rel="me" href="https://mas.to/@wishiscool" style="display: none;">Mastodon</a>
     <h1>hey there! we're taking you to https://bsky.app/profile/wish.freakybob.site</h1>
     <p>why do I need this? I cannot verify my BlueSky link on Mastodon, so this is my solution.</p>
+    <a href="https://bsky.app/profile/wish.freakybob.site">if you weren't redirected, click here</a>
     <script>
         function redirect() {
             window.location.replace("https://bsky.app/profile/wish.freakybob.site");
