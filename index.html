@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wish | home</title>
-    <meta name="description" content="wish's website :D">
-    <meta content="wish | home" property="og:title" />
-    <meta content="wish's website :D" property="og:description"/>
-    <meta content="https://wish.freakybob.site" property="og:url" />
+    <title>wish's website</title>
     <style>
         * {
-            font-family: "Inter", sans-serif;
             text-align: center;
         }
-        h1, p, a {
-            color: greenyellow;
+        body:before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('media/boom.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: 9999;
+            pointer-events: none;
         }
-        body {
-            background-color: black;
+        marquee {
+            align-items: center;
+            display: flex;
         }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <meta name="fediverse:creator" content="@wishiscool@mas.to">
 </head>
-<body>
-    <a href="https://github.com/wish13yt" rel="me" style="display: none;">github.com/wish13yt</a>
-    <a href="mailto:wishyt@proton.me" rel="me" style="display: none;">wishyt@proton.me</a>
-    <a rel="me" href="https://mas.to/@wishiscool" style="display: none;">Mastodon</a>
-    <h1>hi! im wish, nice to meet you.</h1>
-    <p>I'm Wish, a Freakybob Team member (duh, obviously)</p>
-    <p>minor so dont be creep...</p>
-    <h1>socials</h1>
-    <a href="https://bsky.app/profile/wish.freakybob.site">🦋 bluesky</a>
-    <br><br>
-    <a href="https://wish.leaflet.pub/">blog</a>
+<body onload="redirect()">
+    <h1>wish's website.</h1>
+    <p>wait is that an explosion</p>
+    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+    <p>gotta run, the cars starting</p>
+    <marquee direction="right"><img src="media/car.webp"></marquee>
+    <script>
+        async function redirect() {
+            await new Promise(r => setTimeout(r, 5000));
+            window.location.href = "realpage.html";
+        }
+</script>
 </body>
 </html>
