@@ -3,43 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wish's website</title>
+    <title>wish | home</title>
+    <meta name="description" content="wish's website :D">
+    <meta content="wish | home" property="og:title" />
+    <meta content="wish's website :D" property="og:description"/>
+    <meta content="https://wish.freakybob.site" property="og:url" />
     <style>
         * {
+            font-family: "Inter", sans-serif;
             text-align: center;
+            color: white;
+            box-shadow: 50px;
+            cursor: url(media/cursor.cur), url(media/cursor.cur), auto
         }
-        body:before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('media/boom.gif');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.5;
-            z-index: 9999;
-            pointer-events: none;
+        body {
+            background-color: black;
         }
-        marquee {
-            align-items: center;
-            display: flex;
+        button {
+            background-color: black;
+        }
+        #items {
+            text-shadow: 1px 1px 2px green;
+        }
+        a, button {
+            cursor: url(media/linkcursor.cur), url(media/linkcursor.cur), auto
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="fediverse:creator" content="@wishiscool@mas.to">
 </head>
-<body onload="redirect()">
-    <h1>wish's website.</h1>
-    <p>wait is that an explosion</p>
-    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-    <p>gotta run, the cars starting</p>
-    <marquee direction="right"><img src="media/car.webp"></marquee>
-    <script>
-        async function redirect() {
-            await new Promise(r => setTimeout(r, 5000));
-            window.location.href = "realpage.html";
-        }
-</script>
+<body>
+    <div id="items">
+        <a href="https://github.com/wish13yt" rel="me" style="display: none;">github.com/wish13yt</a>
+        <a href="mailto:wishyt@proton.me" rel="me" style="display: none;">wishyt@proton.me</a>
+        <a rel="me" href="https://mas.to/@wishiscool" style="display: none;">Mastodon</a>
+        <h1>hi! im wish, nice to meet you !!!!</h1>
+        <a href="https://sharkey.nomaakip.xyz/@wish"><button>click this to follow me on sharkey</button></a><br>
+        <iframe src="https://sharkey.nomaakip.xyz/embed/user-timeline/aguwbbftp7lv000p?header=false&maxHeight=300&rounded=false" data-misskey-embed-id="v1_714450d5-db48-4099-b6de-c46e5f94a008" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" style="border: none; width: 100%; max-width: 500px; height: 300px; color-scheme: light dark;"></iframe>
+        <script defer src="https://sharkey.nomaakip.xyz/embed.js"></script>
+    </div>
+    <hr>
+    <footer>
+        <p>Cursors from <a href="https://www.rw-designer.com/cursor-set/miku-hatsune-md">https://www.rw-designer.com/cursor-set/miku-hatsune-md</a></p>
+        <p>2025 Wish - Licensed under GPL-3.0</p>
+        <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=wish"></iframe>
+    </footer>
 </body>
 </html>
