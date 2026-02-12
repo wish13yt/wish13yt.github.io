@@ -1,28 +1,27 @@
 {
-  "subject": "acct:wishiscool@mas.to",
+  "subject": "acct:wish@sk.waf.moe",
   "aliases": [
-    "https://mas.to/@wishiscool",
-    "https://mas.to/users/wishiscool"
+    "https://sk.waf.moe/@wish"
   ],
   "links": [
     {
       "rel": "http://webfinger.net/rel/profile-page",
       "type": "text/html",
-      "href": "https://mas.to/@wishiscool"
+      "href": "https://sk.waf.moe/@wish"
     },
     {
       "rel": "self",
       "type": "application/activity+json",
-      "href": "https://mas.to/users/wishiscool"
+      "href": "https://sk.waf.moe/@wish"
     },
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
-      "template": "https://mas.to/authorize_interaction?uri={uri}"
+      "template": "https://sk.waf.moe/authorize_interaction?uri={uri}"
     },
     {
       "rel": "http://webfinger.net/rel/avatar",
       "type": "image/png",
-      "href": "https://media.mas.to/accounts/avatars/114/927/258/516/988/664/original/0f0ab929be7f7876.png"
+      "href": "https://sk.waf.moe/proxy/avatar.webp?url=https%3A%2F%2Fsk.waf.moe%2Ffiles%2Fb96442e2-1f3a-482e-aba0-ac3e68cffb22.webp&avatar=1"
     }
   ]
 }
