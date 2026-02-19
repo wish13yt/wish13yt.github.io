@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/wishyt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://wish13yt.github.io
+  * I am wishyt (https://keybase.io/wishyt) on keybase.
+  * I have a public key ASCMwrMTItG3OeoeaFO4o2Ac3FQPj6a2n0TqM59S8hV7swo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208cc2b31322d1b739ea1e6853b8a3601cdc540f8fa6b69f44ea339f52f2157bb30a",
+      "host": "keybase.io",
+      "kid": "01208cc2b31322d1b739ea1e6853b8a3601cdc540f8fa6b69f44ea339f52f2157bb30a",
+      "uid": "9d38ecc24d99b1f344a81a920fb1f519",
+      "username": "wishyt"
+    },
+    "merkle_root": {
+      "ctime": 1771541110,
+      "hash": "d90bb7f80e586815fcc29fea3eaf3be52c1f66c8f84b814665c17f2c0ba21316eddd10f2741830d6da93122fe66e71ce4a974946d72ce666229ccf73ac94a313",
+      "hash_meta": "8b25fae4308cee9163bafff7966d869ef373433adb5485ffcffc42f0f4b7aa69",
+      "seqno": 27421544
+    },
+    "service": {
+      "entropy": "0uMjpxMnoybNM/LV2xfMCZtq",
+      "hostname": "wish13yt.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1771541115,
+  "expire_in": 504576000,
+  "prev": "d4ce032b2326e5c82565704419bf13fb793ce45e93dd3d7a9eef01bf65a0a868",
+  "seqno": 25,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgjMKzEyLRtznqHmhTuKNgHNxUD4+mtp9E6jOfUvIVe7MKp3BheWxvYWTESpcCGcQg1M4DKyMm5cglZXBEGb8T+3k85F6T3T16nu8Bv2WgqGjEICqomkWM9Fwol9CMyjHgAZnXZH6FtlQjnZEXHY/0fJ9SAgHCo3NpZ8RAzdmaFtGcgSPdabCgnk1rUOtI785kzP0k23WfCDDOQ9hgZo1yn8YinhBKBhuH/M3uKilhqjfBwgSXMd6A4lRtBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMXUHqPpMAEkhSuTYjuo/+DRPJgh4DO8o8d4qY7PDtleo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wishyt
+
+==================================================================
