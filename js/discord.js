@@ -7,10 +7,6 @@ fetch(`https://api.lanyard.rest/v1/users/1409704302238502935`)
         const pfp = document.getElementById('discord-pfp');
         pfp.src = `https://cdn.discordapp.com/avatars/${data.discord_user.id}/${data.discord_user.avatar}.png`;
 
-        const nameEl = document.getElementById('discord-name');
-        nameEl.textContent = data.discord_user.username;
-        nameEl.href = `https://discord.com/users/${data.discord_user.id}`;
-
         const statusEl = document.getElementById('discord-status');
         if (Math.random() < 0.2) {
             statusEl.textContent = 'perchance';
