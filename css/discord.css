@@ -1,0 +1,40 @@
+/* again, stolen from squirrel (squirrelz.xyz) thank you squirrel */
+.about-right {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.about-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.about-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.discord-pfp {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-name {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.about-heading {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 18px;
+    margin: 0 0 12px 0;
+}
