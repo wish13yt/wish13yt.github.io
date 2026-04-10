@@ -32,11 +32,3 @@ fetch(`https://api.lanyard.rest/v1/users/1409704302238502935`)
             textEl.textContent = 'no status';
         }
     })
-    .catch(() => {
-        document.getElementById('discord-status').textContent = 'unavailable';
-        document.getElementById('discord-status-text').textContent = 'unavailable';
-
-        const nameEl = document.getElementById('discord-name');
-        nameEl.textContent = 'hi im the script i died i guess - discord.js';
-        nameEl.removeAttribute('href');
-    });

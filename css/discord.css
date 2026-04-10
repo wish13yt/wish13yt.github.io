@@ -1,11 +1,6 @@
 /* again, stolen from squirrel (squirrelz.xyz) thank you squirrel */
-.about-right {
-    flex-shrink: 0;
-    width: 300px;
-}
-
 .about-card {
-    display: flex;
+    display: center;
     align-items: flex-start;
     gap: 12px;
     padding-bottom: 10px;
