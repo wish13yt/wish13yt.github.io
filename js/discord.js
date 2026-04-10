@@ -9,7 +9,7 @@ fetch(`https://api.lanyard.rest/v1/users/1409704302238502935`)
 
         const statusEl = document.getElementById('discord-status');
         if (Math.random() < 0.2) {
-            statusEl.textContent = 'perchance';
+            statusEl.textContent = 'Perchance. (see bottom of site)';
         } else {
             statusEl.textContent =
                 data.discord_status === 'offline' ? 'no' : 'yes';
