@@ -24,9 +24,11 @@
 <body>
     <h1>You are our 1 millionth click! You won!</h1>
     <button onclick="fartsound()">Claim your FREE prize today!</button>
+    <div id="money"></div>
     <p>Sound Effect by <a href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=335478">DRAGON-STUDIO</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=335478">Pixabay</a></p>
     <script>
         function fartsound() {
+            money.textContent = "Loading your prize! Please wait."
             var fart = new Audio("media/fart.mp3");
             fart.play();
             fart.addEventListener("ended", function(){
