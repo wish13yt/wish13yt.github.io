@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! You won!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            color: white;
+            font-family: "Inter", sans-serif;
+            text-align: center;
+        }
+        body {
+            background-color: black;
+        }
+        button {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>You are our 1 millionth click! You won!</h1>
+    <button onclick="fartsound()">Claim your FREE prize today!</button>
+    <p>Sound Effect by <a href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=335478">DRAGON-STUDIO</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=335478">Pixabay</a></p>
+    <script>
+        function fartsound() {
+            var fart = new Audio("media/fart.mp3");
+            fart.play();
+            fart.addEventListener("ended", function(){
+                fart.currentTime = 0;
+                window.location.href = document.location.origin + "/index.html";
+            });
+        }
+    </script>
+</body>
+</html>

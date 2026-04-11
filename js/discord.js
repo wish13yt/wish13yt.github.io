@@ -22,7 +22,6 @@ fetch(`https://api.lanyard.rest/v1/users/1409704302238502935`)
         if (customStatus) {
             emojiEl.textContent = customStatus.emoji?.name ?? '';
             textEl.textContent = customStatus.state || '';
-            maybeMarquee(textEl);
         } else {
             emojiEl.textContent = '';
             textEl.textContent = 'no status';
