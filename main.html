@@ -28,6 +28,9 @@
         a, button {
             cursor: url(media/linkcursor.cur), url(media/linkcursor.cur), auto
         }
+        #stat-visits, #stat-unique, #stat-online {
+            display: inline;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +44,12 @@
         <a href="mailto:wishyt@proton.me" rel="me" style="display: none;">wishyt@proton.me</a>
         <a rel="me" href="https://sk.nomaakip.xyz/@wish" style="display: none;">Sharkey</a>
         <h1>hi! im wish, nice to meet you !!!!</h1>
+        <div id="stats">
+            <p id="stat-visits">loading stats-visits</p>
+            <p id="stat-unique">loading stats-unique</p>
+            <p id="stat-online">loading stats-online</p>
+        </div>
+        <br>
         <button onclick="haha()">I'm Feeling Lucky!</button>
         <a href="button.html"><button>Get my button!</button></a>
         <a href="https://sk.nomaakip.xyz/@wish"><button>click this to follow me on sharkey</button></a><br>
@@ -63,6 +72,7 @@
         <a href="media/perchance.png">Perchance.</a>
         <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=wish"></iframe>
     </footer>
+    <script src="https://sc.squirrelz.xyz/track.js?key=wish13yt"></script>
     <script>
         function haha() {
             if (Math.random() < .01) {
@@ -72,6 +82,22 @@
                 window.location.href = document.location.origin + "/coins.html";
             }
         }
+        function fetchStats() {
+        fetch('https://sc.squirrelz.xyz/api/v1/stats?key=wish13yt')
+            .then(r => r.json())
+            .then(d => {
+                document.getElementById('stat-visits').textContent = "Total visits: " + d.total_visits + " |";
+                document.getElementById('stat-unique').textContent = "Unique visits: " + d.unique_visitors + " |";
+                document.getElementById('stat-online').textContent = "Currently online: " + d.on_site ?? '-';
+            })
+            .catch(() => {
+                ['stat-visits', 'stat-unique', 'stat-online'].forEach(id => {
+                    document.getElementById(id).textContent = '-';
+                });
+            });
+        }
+        fetchStats();
+        setInterval(fetchStats, 30000);
     </script>
 </body>
 </html>
