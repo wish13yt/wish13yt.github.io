@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Stats</title>
+    <style>
+        * {
+            color: white;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+        }
+        body {
+            background-color: black;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Time till Summer</h1>
+    <p>thanks, <a href="https://www.w3schools.com/howto/howto_js_countdown.asp">w3schools</a> for the countdown script</p>
+    <h1 id="demo">loading</h1>
+    <hr>
+    <h1>Final Projects</h1>
+    <p>Math (➖) - ?/120 (due this week)</p>
+    <p>ELA (✅) - ?/80 (due this week)</p>
+    <p>Art (➖) - ?/80 (due this week)</p>
+    <p>Art (current) - ?/60 (due next week)</p>
+    <p>(a ✅ or ➖ means the project is halfway or entirely completed, but due to some reason or another cannot be turned in yet)</p>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 29, 2026 3:15:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "SUMMER!!!";
+        }
+        }, 1000);
+    </script>
+</body>
+</html>
